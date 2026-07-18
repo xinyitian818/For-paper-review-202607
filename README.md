@@ -1,4 +1,4 @@
-# For-delta-SHGC-paper-review
+# For-paper-review
 
 This repository provides the code, input files, dataset preparation workflow, and model training procedures used in our study. It is intended to support a transparent and reproducible review of the data generation and surrogate-model development process.
 
