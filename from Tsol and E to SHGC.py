@@ -1,4 +1,3 @@
-import os
 import pywincalc
 import pandas as pd
 import numpy as np
