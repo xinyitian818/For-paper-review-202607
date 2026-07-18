@@ -29,3 +29,6 @@ The repository includes the following materials:
 
 9. **`ml results/`**  
    This folder contains the generated surrogate models in `.pkl` format.
+
+10. **`requirements.txt`**  
+   This file lists all Python dependencies required to replicate our workflow, covering window optical calculations, EnergyPlus simulations, machine learning training, and model interpretation.
