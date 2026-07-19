@@ -32,3 +32,29 @@ The repository includes the following materials:
 
 10. **`requirements.txt`**  
    This file lists all Python dependencies required to replicate our workflow, covering window optical calculations, EnergyPlus simulations, machine learning training, and model interpretation.
+
+To rigorously evaluate the predictive accuracy of the XGBoost surrogate model, we utilize  key performance metrics: Root Mean Squared Error (RMSE), and the Coefficient of Variation of the Root Mean Squared Error (CV-RMSE).
+## Model Evaluation Metrics
+
+To rigorously evaluate the predictive accuracy of the XGBoost surrogate model, we utilize the following performance metrics:
+
+### 1. Root Mean Squared Error (RMSE)
+RMSE measures the average magnitude of the prediction error, penalizing larger errors more heavily. It shares the same unit as the target variables (e.g., GJ for energy consumption).
+
+$$RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
+
+* **$y_i$**: The actual energy consumption simulated by EnergyPlus.
+* **$\hat{y}_i$**: The predicted value from the XGBoost model.
+* **$n$**: The total number of samples.
+
+### 2. Coefficient of Variation of the RMSE (CV(RMSE))
+CV(RMSE) normalizes the RMSE by dividing it by the mean of the actual values ($\bar{y}$).
+
+$$CV(RMSE) = \frac{RMSE}{\bar{y}} \times 100\%$$
+
+$$\bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i$$
+
+
+
+
+
