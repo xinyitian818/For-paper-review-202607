@@ -33,7 +33,6 @@ The repository includes the following materials:
 10. **`requirements.txt`**  
    This file lists all Python dependencies required to replicate our workflow, covering window optical calculations, EnergyPlus simulations, machine learning training, and model interpretation.
 
-To rigorously evaluate the predictive accuracy of the XGBoost surrogate model, we utilize  key performance metrics: Root Mean Squared Error (RMSE), and the Coefficient of Variation of the Root Mean Squared Error (CV(RMSE)).
 ## Model Evaluation Metrics
 
 To rigorously evaluate the predictive accuracy of the XGBoost surrogate model, we utilize the following performance metrics:
